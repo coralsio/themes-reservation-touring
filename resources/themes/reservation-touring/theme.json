@@ -1,0 +1,10 @@
+{
+  "type": "frontend",
+  "name": "reservation-touring",
+  "extends": null,
+  "caption": "Touring Reservation",
+  "version": "1.4.1",
+  "assetPath": "assets\/themes\/reservation-touring",
+  "routeNamespace": "Corals\\Modules\\Reservation\\Http\\Controllers",
+  "platform": "Reservation"
+}
