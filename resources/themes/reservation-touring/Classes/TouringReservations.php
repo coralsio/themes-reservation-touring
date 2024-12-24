@@ -327,9 +327,9 @@ class TouringReservations
 
             if ($schedule->start_time && $schedule->end_time) {
 
-                [$hours, $minutes] = explode(':', $schedule->start_time);
+                [$hours, $minutes] = (int)explode(':', $schedule->start_time);
                 $startTime = now()->setHours($hours)->setMinutes($minutes)->format('H.i');
-                [$hours, $minutes] = explode(':', $schedule->end_time);
+                [$hours, $minutes] = (int)explode(':', $schedule->end_time);
                 $endTime = now()->setHours($hours)->setMinutes($minutes)->format('H.i');
                 $time = "$startTime - $endTime";
             } else {
